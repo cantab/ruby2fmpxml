@@ -25,8 +25,8 @@ class FileMakerXMLMaker
   def generate_metadata(metadata_fields, &block)
     builder = headers do |xml|
       xml.METADATA do
-        metadata_fields.each_slice(2) do |value_type|
-          xml.FIELD(EMPTYOK: "YES", MAXREPEAT: "1", NAME: value_type[0], TYPE: value_type[1])
+        metadata_fields.each_slice(2) do |name, type|
+          xml.FIELD(EMPTYOK: "YES", MAXREPEAT: "1", NAME: name, TYPE: type)
         end
       end
       yield(xml) if block_given?
