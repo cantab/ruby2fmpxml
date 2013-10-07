@@ -3,6 +3,11 @@ require "sinatra/reloader" if development?
 require 'nokogiri'
 require './filemaker_xml_maker'
 
+# use newrelic in production
+configure :production do
+  require 'newrelic_rpm'
+end
+
 get '/' do
   content_type :html
   "<h1>Ruby to FileMaker Pro XML</h1>"
