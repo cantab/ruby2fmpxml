@@ -38,7 +38,7 @@ class FileMakerXMLMaker
       xml.FMPXMLRESULT(xmlns:"http://www.filemaker.com/fmpxmlresult") do
         xml.ERRORCODE 0
         xml.PRODUCT(BUILD: "03-21-2013", NAME: "FileMaker", VERSION: "ProAdvanced 12.0v4")
-        xml.DATABASE(DATEFORMAT: "D/m/yyyy", LAYOUT: "", NAME: "Granta.fmp12", RECORDS: 1, TIMEFORMAT: "h:mm:ss a")
+        xml.DATABASE(DATEFORMAT: "D/m/yyyy", LAYOUT: "", NAME: "Database.fmp12", RECORDS: 1, TIMEFORMAT: "h:mm:ss a")
         yield(xml) if block_given?
       end
     end

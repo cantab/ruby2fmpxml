@@ -38,7 +38,7 @@ The following XML shows the result of calling the app on the string "The rain in
 <FMPXMLRESULT xmlns="http://www.filemaker.com/fmpxmlresult">
   <ERRORCODE>0</ERRORCODE>
   <PRODUCT BUILD="03-21-2013" NAME="FileMaker" VERSION="ProAdvanced 12.0v4"/>
-  <DATABASE DATEFORMAT="D/m/yyyy" LAYOUT="" NAME="Granta.fmp12" RECORDS="1" TIMEFORMAT="h:mm:ss a"/>
+  <DATABASE DATEFORMAT="D/m/yyyy" LAYOUT="" NAME="Database.fmp12" RECORDS="1" TIMEFORMAT="h:mm:ss a"/>
   <METADATA>
   <FIELD EMPTYOK="YES" MAXREPEAT="1" NAME="Input" TYPE="TEXT"/>
   <FIELD EMPTYOK="YES" MAXREPEAT="1" NAME="Result" TYPE="TEXT"/>
