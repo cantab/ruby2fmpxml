@@ -25,15 +25,17 @@ Start the Unicorn server
 ```
 foreman start
 ```
-The app should now be live at http://localhost:5000
+The app should now be live at http://localhost:5000. Enter the string to be converted and click the 'Submit' button.
 
 ##Syntax
-Simply pass the string, in URL encoded form appended with a '.rot13', to the base URL.
+Pass the string, in URL encoded form as a POST parameter 'my_string' to the endpoint 
+http://www.yourserver.com/rot13
+```
+curl -d "my_string=Vg%27f%20n%20fyrqtr" http://www.yourserver.com/rot13
+```
 
-For example, http://www.yourserver.com/string%20you%20want%20converted.rot13
-
-##Result
-The following XML shows the result of calling the app on the string "The rain in Spain stays mainly in the plain"
+##Result in FMPXMLRESULT Grammar
+The following XML shows the result of calling the app on the string "Fur'f n zna"
 ```xml
 <FMPXMLRESULT xmlns="http://www.filemaker.com/fmpxmlresult">
   <ERRORCODE>0</ERRORCODE>
@@ -46,10 +48,10 @@ The following XML shows the result of calling the app on the string "The rain in
   <RESULTSET FOUND="1">
     <ROW MODID="0" RECORDID="0">
       <COL>
-        <DATA>The rain in Spain stays mainly in the plain</DATA>
+        <DATA>Fur'f n zna</DATA>
       </COL>
       <COL>
-        <DATA>Gur enva va Fcnva fgnlf znvayl va gur cynva</DATA>
+        <DATA>She's a man</DATA>
       </COL>
     </ROW>
   </RESULTSET>
@@ -58,6 +60,9 @@ The following XML shows the result of calling the app on the string "The rain in
 
 ##Live Web App
 Explore the app live at http://ruby2fmpxml.herokuapp.com
+<form action="/rot13" method="POST"><input type="hidden" name="_method" value="post" />
+<textarea id="my_string" name="my_string">Ur'f n tubfg</textarea>
+<input id="button_submit" name="submit" type="submit" value="Submit" />
 
 ##License
 Copyright (c) 2013 Chong-Yee Khoo
