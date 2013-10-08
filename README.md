@@ -28,7 +28,7 @@ foreman start
 The app should now be live at http://localhost:5000. Enter the string to be converted and click the 'Submit' button.
 
 ##Syntax
-Pass the string, in URL encoded form as a POST parameter 'my_string' to the endpoint 
+Pass the string in URL encoded form as a POST parameter 'my_string' to the endpoint 
 http://www.yourserver.com/rot13
 ```
 curl -d "my_string=Vg%27f%20n%20fyrqtr" http://www.yourserver.com/rot13
@@ -60,9 +60,6 @@ The following XML shows the result of calling the app on the string "Fur'f n zna
 
 ##Live Web App
 Explore the app live at http://ruby2fmpxml.herokuapp.com
-<form action="/rot13" method="POST"><input type="hidden" name="_method" value="post" />
-<textarea id="my_string" name="my_string">Ur'f n tubfg</textarea>
-<input id="button_submit" name="submit" type="submit" value="Submit" />
 
 ##License
 Copyright (c) 2013 Chong-Yee Khoo
