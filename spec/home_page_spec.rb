@@ -6,10 +6,6 @@ describe 'ruby2fmpxml web app', type: :feature do
     let(:response) { get '/' }
     let(:home_page) { response.body }
 
-    it "returns a page" do
-      expect(response).to be_ok
-    end
-
     it "has the right header" do
       expect(home_page).to include('Ruby to FileMaker Pro XML')
     end
@@ -27,10 +23,6 @@ describe 'ruby2fmpxml web app', type: :feature do
         visit '/'
         page.fill_in 'my_string', with: "It's a sledge"
         click_button 'Submit'
-      end
-
-      it "submits the form" do
-        expect(response).to be_ok
       end
 
       it "returns the right content" do
