@@ -1,9 +1,9 @@
 class FileMakerXMLMaker
 
-  attr_reader :caller_object
+  attr_reader :display
 
-  def initialize(caller_object)
-    @caller_object = caller_object
+  def initialize(display)
+    @display = display
   end
 
   def to_fmpxml
@@ -12,7 +12,7 @@ class FileMakerXMLMaker
       xml.RESULTSET(FOUND: 1) do
         xml.ROW(MODID: "0", RECORDID: "0") do
           xml.COL do
-            xml.DATA @caller_object.to_s
+            xml.DATA @display.to_s
           end
         end
       end
