@@ -6,7 +6,7 @@ A [Sinatra](http://www.sinatrarb.com) app with example showing how to create XML
 
 ##About this App
 
-Takes a URL encoded string and returns a [Rot13](http://en.wikipedia.org/wiki/ROT13) version of the string in in FMPXMLRESULT grammar.
+Takes a URL encoded string and returns a [Rot13](http://en.wikipedia.org/wiki/ROT13) version of the string in FMPXMLRESULT grammar.
 
 ##How to Use
 Clone the app from Github
