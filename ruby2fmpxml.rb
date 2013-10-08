@@ -11,6 +11,10 @@ end
 
 get '/:my_string.?rot13/?' do
   content_type :xml
-  display = params[:my_string].tr("A-Za-z", "N-ZA-Mn-za-m")
+
+  input = params[:my_string]
+  output = input.tr("A-Za-z", "N-ZA-Mn-za-m")
+
+  display = { input: input, output: output }
   FileMakerXMLMaker.new(display).to_fmpxml
 end

@@ -7,12 +7,14 @@ class FileMakerXMLMaker
   end
 
   def to_fmpxml
-    metadata_fields = ["Input", "TEXT", "Result", "TEXT"]
+    metadata_fields = ["Input", "TEXT", "Output", "TEXT"]
     builder = generate_metadata(metadata_fields) do |xml|
       xml.RESULTSET(FOUND: 1) do
         xml.ROW(MODID: "0", RECORDID: "0") do
-          xml.COL do
-            xml.DATA @display.to_s
+          @display.each do |key, value|
+            xml.COL do
+              xml.DATA @display[key].to_s
+            end
           end
         end
       end

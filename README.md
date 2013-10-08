@@ -41,7 +41,7 @@ The following XML shows the result of calling the app on the string "The rain in
   <DATABASE DATEFORMAT="D/m/yyyy" LAYOUT="" NAME="Database.fmp12" RECORDS="1" TIMEFORMAT="h:mm:ss a"/>
   <METADATA>
   <FIELD EMPTYOK="YES" MAXREPEAT="1" NAME="Input" TYPE="TEXT"/>
-  <FIELD EMPTYOK="YES" MAXREPEAT="1" NAME="Result" TYPE="TEXT"/>
+  <FIELD EMPTYOK="YES" MAXREPEAT="1" NAME="Output" TYPE="TEXT"/>
   </METADATA>
   <RESULTSET FOUND="1">
     <ROW MODID="0" RECORDID="0">
