@@ -40,11 +40,14 @@ The following XML shows the result of calling the app on the string "The rain in
   <PRODUCT BUILD="03-21-2013" NAME="FileMaker" VERSION="ProAdvanced 12.0v4"/>
   <DATABASE DATEFORMAT="D/m/yyyy" LAYOUT="" NAME="Database.fmp12" RECORDS="1" TIMEFORMAT="h:mm:ss a"/>
   <METADATA>
-  <FIELD EMPTYOK="YES" MAXREPEAT="1" NAME="Input" TYPE="TEXT"/>
-  <FIELD EMPTYOK="YES" MAXREPEAT="1" NAME="Output" TYPE="TEXT"/>
+    <FIELD EMPTYOK="YES" MAXREPEAT="1" NAME="Input" TYPE="TEXT"/>
+    <FIELD EMPTYOK="YES" MAXREPEAT="1" NAME="Output" TYPE="TEXT"/>
   </METADATA>
   <RESULTSET FOUND="1">
     <ROW MODID="0" RECORDID="0">
+      <COL>
+        <DATA>The rain in Spain stays mainly in the plain</DATA>
+      </COL>
       <COL>
         <DATA>Gur enva va Fcnva fgnlf znvayl va gur cynva</DATA>
       </COL>
