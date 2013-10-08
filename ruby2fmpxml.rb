@@ -3,7 +3,6 @@ require './filemaker_xml_maker'
 require 'nokogiri'
 require 'sinatra/reloader' if development?
 require 'newrelic_rpm' if production?
-require 'sinatra/form_helpers'
 
 get '/' do
   erb :index

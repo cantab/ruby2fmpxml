@@ -4,8 +4,8 @@ Enter some text below.
 <p>
 Click submit to see a Rot13 version in FileMaker XML format.
 
-<%= form('/rot13', :post) %>
+<form action="/rot13" method="POST"><input type="hidden" name="_method" value="post" />
 
-<%= textarea(:my_string) %>
+<textarea id="my_string" name="my_string">Ur'f n tubfg</textarea>
 
-<%= submit %>
+<input id="button_submit" name="submit" type="submit" value="Submit" />
