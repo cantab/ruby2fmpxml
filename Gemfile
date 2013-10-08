@@ -9,4 +9,5 @@ gem 'newrelic_rpm'
 
 group :development, :test do
   gem 'sinatra-contrib'
+  gem 'rspec'
 end
