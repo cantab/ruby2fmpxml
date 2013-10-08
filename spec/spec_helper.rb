@@ -1,7 +1,6 @@
-require 'rspec'
 require 'rack/test'
-require 'capybara'
-require 'capybara/dsl'
+require 'rspec'
+require 'capybara/rspec'
 require_relative '../ruby2fmpxml'
 
 ENV['RACK_ENV'] = 'test'
@@ -14,4 +13,5 @@ Capybara.app = Sinatra::Application
 
 RSpec.configure do |conf|
   conf.include Rack::Test::Methods
+  conf.include Capybara::DSL
 end

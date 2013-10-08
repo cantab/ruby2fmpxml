@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe 'ruby2fmpxml web app' do
+describe 'ruby2fmpxml web app', type: :feature do
 
   describe "home page" do
     let(:response) { get '/' }
@@ -16,6 +16,7 @@ describe 'ruby2fmpxml web app' do
 
     it "a form with textarea" do
       expect(home_page).to include('textarea id="my_string"')
+      expect(home_page).to have_selector('textarea#my_string')
     end
   end
 end
