@@ -10,4 +10,5 @@ gem 'newrelic_rpm'
 group :development, :test do
   gem 'sinatra-contrib'
   gem 'rspec'
+  gem 'capybara', '2.0.2'
 end
