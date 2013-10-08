@@ -5,8 +5,7 @@ require 'sinatra/reloader' if development?
 require 'newrelic_rpm' if production?
 
 get '/' do
-  content_type :html
-  "<h1>Ruby to FileMaker Pro XML</h1>"
+  erb :index
 end
 
 get '/:my_string.?rot13/?' do
