@@ -3,12 +3,13 @@ require './filemaker_xml_maker'
 require 'nokogiri'
 require 'sinatra/reloader' if development?
 require 'newrelic_rpm' if production?
+require 'sinatra/form_helpers'
 
 get '/' do
   erb :index
 end
 
-get '/:my_string.?rot13/?' do
+post '/rot13' do
   content_type :xml
 
   display = get_rot13(params[:my_string])

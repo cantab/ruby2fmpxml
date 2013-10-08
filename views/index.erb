@@ -1,1 +1,11 @@
 <h1>Ruby to FileMaker Pro XML</h1>
+
+Enter some text below.
+<p>
+Click submit to see a Rot13 version in FileMaker XML format.
+
+<%= form('/rot13', :post) %>
+
+<%= textarea(:my_string) %>
+
+<%= submit %>
