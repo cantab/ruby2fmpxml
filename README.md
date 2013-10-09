@@ -28,12 +28,17 @@ foreman start
 The app should now be live at http://localhost:5000. Enter the string to be converted and click the 'Submit' button.
 
 ##Syntax
-Pass the string in URL encoded form as a POST parameter 'my_string' to the endpoint 
+###HTTP GET
+Call http://www.example.com/rot13 with a URL encoded string
+```
+curl -d http://ruby2fmpxml.herokuapp.com/rot13/Vg%27f%20n%20fyrqtr
+```
+###HTTP POST
+Pass the string in URL encoded form as a POST parameter 'my_string' to the endpoint
 http://www.example.com/rot13
 ```
 curl -d "my_string=Vg%27f%20n%20fyrqtr" http://ruby2fmpxml.herokuapp.com/rot13
 ```
-
 ##Result in FMPXMLRESULT Grammar
 The following XML shows the result of calling the app on the string "Fur'f n zna"
 ```xml
@@ -60,6 +65,9 @@ The following XML shows the result of calling the app on the string "Fur'f n zna
 
 ##Live Web App
 Explore the app live at http://ruby2fmpxml.herokuapp.com
+
+##Contributing to this Project
+Please feel free to contribute. Fork, make your changes, and do a pull request. Make sure to add documentation to this readme file.
 
 ##License
 Copyright (c) 2013 Chong-Yee Khoo
