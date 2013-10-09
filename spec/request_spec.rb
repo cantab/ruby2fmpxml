@@ -11,9 +11,9 @@ describe 'requests' do
 
   describe "rot13 end point" do
     context "HTTP GET" do
-      it "cannot be accessed with GET" do
-        get '/rot13'
-        expect(last_response).to_not be_ok
+      it "can be accessed with GET" do
+        get '/rot13/She%27s%20a%20man'
+        expect(last_response).to be_ok
       end
     end
 

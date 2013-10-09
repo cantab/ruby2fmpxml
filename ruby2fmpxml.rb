@@ -15,6 +15,13 @@ post '/rot13' do
   get_fmpxml(display)
 end
 
+get '/rot13/:my_string/?' do
+  content_type :xml
+
+  display = get_rot13(params[:my_string])
+  get_fmpxml(display)
+end
+
 private
 
 def get_rot13(input)
