@@ -31,7 +31,7 @@ The app should now be live at http://localhost:5000. Enter the string to be conv
 ###HTTP GET
 Call http://www.example.com/rot13 with a URL encoded string
 ```
-curl -d http://ruby2fmpxml.herokuapp.com/rot13/Vg%27f%20n%20fyrqtr
+curl http://ruby2fmpxml.herokuapp.com/rot13/Vg%27f%20n%20fyrqtr
 ```
 ###HTTP POST
 Pass the string in URL encoded form as a POST parameter 'my_string' to the endpoint
