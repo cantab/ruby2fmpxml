@@ -1,6 +1,7 @@
 #ruby2fmpxml
 
 ###Ruby to FileMaker XML Converter
+![<Display Name>](<https://travis-ci.org/cantab/ruby2fmpxml.png>)
 
 ruby2fmpxml is an example [Sinatra](http://www.sinatrarb.com) app which creates [FileMaker](http://www.filemaker.com) XML documents in [FMPXMLRESULT grammar](http://www.filemaker.com/help/html/import_export.16.30.html) grammar using Ruby.
 
