@@ -1,68 +1,78 @@
 GEM
   remote: http://rubygems.org/
   specs:
-    backports (3.6.4)
-    capybara (2.4.4)
-      mime-types (>= 1.16)
+    addressable (2.5.2)
+      public_suffix (>= 2.0.2, < 4.0)
+    backports (3.11.1)
+    capybara (2.18.0)
+      addressable
+      mini_mime (>= 0.1.3)
       nokogiri (>= 1.3.3)
       rack (>= 1.0.0)
       rack-test (>= 0.5.4)
-      xpath (~> 2.0)
-    diff-lcs (1.2.5)
-    kgio (2.9.3)
-    mime-types (2.4.3)
-    mini_portile (0.6.2)
-    multi_json (1.10.1)
-    newrelic_rpm (3.9.9.275)
-    nokogiri (1.6.5)
-      mini_portile (~> 0.6.0)
-    rack (1.6.0)
-    rack-protection (1.5.3)
+      xpath (>= 2.0, < 4.0)
+    diff-lcs (1.3)
+    kgio (2.11.2)
+    mini_mime (1.0.0)
+    mini_portile2 (2.3.0)
+    multi_json (1.13.1)
+    mustermann (1.0.2)
+    nokogiri (1.8.2)
+      mini_portile2 (~> 2.3.0)
+    public_suffix (3.0.2)
+    rack (2.0.4)
+    rack-protection (2.0.1)
       rack
-    rack-test (0.6.3)
-      rack (>= 1.0)
-    raindrops (0.13.0)
-    rake (10.4.2)
-    rspec (3.1.0)
-      rspec-core (~> 3.1.0)
-      rspec-expectations (~> 3.1.0)
-      rspec-mocks (~> 3.1.0)
-    rspec-core (3.1.7)
-      rspec-support (~> 3.1.0)
-    rspec-expectations (3.1.2)
+    rack-test (0.8.3)
+      rack (>= 1.0, < 3)
+    raindrops (0.19.0)
+    rake (12.3.0)
+    rspec (3.7.0)
+      rspec-core (~> 3.7.0)
+      rspec-expectations (~> 3.7.0)
+      rspec-mocks (~> 3.7.0)
+    rspec-core (3.7.1)
+      rspec-support (~> 3.7.0)
+    rspec-expectations (3.7.0)
       diff-lcs (>= 1.2.0, < 2.0)
-      rspec-support (~> 3.1.0)
-    rspec-mocks (3.1.3)
-      rspec-support (~> 3.1.0)
-    rspec-support (3.1.2)
-    sinatra (1.4.5)
-      rack (~> 1.4)
-      rack-protection (~> 1.4)
-      tilt (~> 1.3, >= 1.3.4)
-    sinatra-contrib (1.4.2)
+      rspec-support (~> 3.7.0)
+    rspec-mocks (3.7.0)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.7.0)
+    rspec-support (3.7.1)
+    sinatra (2.0.1)
+      mustermann (~> 1.0)
+      rack (~> 2.0)
+      rack-protection (= 2.0.1)
+      tilt (~> 2.0)
+    sinatra-contrib (2.0.1)
       backports (>= 2.0)
       multi_json
-      rack-protection
-      rack-test
-      sinatra (~> 1.4.0)
-      tilt (~> 1.3)
-    tilt (1.4.1)
-    unicorn (4.8.3)
+      mustermann (~> 1.0)
+      rack-protection (= 2.0.1)
+      sinatra (= 2.0.1)
+      tilt (>= 1.3, < 3)
+    tilt (2.0.8)
+    unicorn (5.4.0)
       kgio (~> 2.6)
-      rack
       raindrops (~> 0.7)
-    xpath (2.0.0)
-      nokogiri (~> 1.3)
+    xpath (3.0.0)
+      nokogiri (~> 1.8)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   capybara
-  newrelic_rpm
   nokogiri
   rake
   rspec
   sinatra
   sinatra-contrib
   unicorn
+
+RUBY VERSION
+   ruby 2.5.0p0
+
+BUNDLED WITH
+   1.16.1
