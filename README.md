@@ -22,7 +22,7 @@ Install gems and dependencies
 ```
 bundle install
 ```
-Start the Unicorn server
+Start the Puma server
 ```
 foreman start
 ```
