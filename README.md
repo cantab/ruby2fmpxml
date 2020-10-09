@@ -1,15 +1,15 @@
-#ruby2fmpxml
+# ruby2fmpxml
 
-###Ruby to FileMaker XML Converter
+### Ruby to FileMaker XML Converter
 [![Build Status](https://travis-ci.org/cantab/ruby2fmpxml.png?branch=master)](https://travis-ci.org/cantab/ruby2fmpxml)
 
 ruby2fmpxml is an example [Sinatra](http://www.sinatrarb.com) app which creates [FileMaker](http://www.filemaker.com) XML documents in [FMPXMLRESULT grammar](http://www.filemaker.com/help/html/import_export.16.30.html) grammar using Ruby.
 
-##About this App
+## About this App
 
 The app takes a URL encoded string and returns a [Rot13](http://en.wikipedia.org/wiki/ROT13) version of the string in FMPXMLRESULT grammar.
 
-##How to Use
+## How to Use
 Clone the app from Github
 ```
 git clone git@github.com:cantab/ruby2fmpxml.git
@@ -28,19 +28,19 @@ foreman start
 ```
 The app should now be live at http://localhost:5000. Enter the string to be converted and click the 'Submit' button.
 
-##Syntax
-###HTTP GET
+## Syntax
+### HTTP GET
 Call http://www.example.com/rot13 with a URL encoded string
 ```
 curl http://ruby2fmpxml.herokuapp.com/rot13/Vg%27f%20n%20fyrqtr
 ```
-###HTTP POST
+### HTTP POST
 Pass the string in URL encoded form as a POST parameter 'my_string' to the endpoint
 http://www.example.com/rot13
 ```
 curl -d "my_string=Vg%27f%20n%20fyrqtr" http://ruby2fmpxml.herokuapp.com/rot13
 ```
-##Result in FMPXMLRESULT Grammar
+## Result in FMPXMLRESULT Grammar
 The following XML shows the result of calling the app on the string "Fur'f n zna"
 ```xml
 <FMPXMLRESULT xmlns="http://www.filemaker.com/fmpxmlresult">
@@ -64,13 +64,13 @@ The following XML shows the result of calling the app on the string "Fur'f n zna
 </FMPXMLRESULT>
 ```
 
-##Live Web App
+## Live Web App
 Explore the app live at http://ruby2fmpxml.herokuapp.com
 
-##Contributing to this Project
+## Contributing to this Project
 Please feel free to contribute. Fork, make your changes, and do a pull request. Make sure to add documentation to this readme file.
 
-##License
+## License
 Copyright (c) 2013 Chong-Yee Khoo
 
 MIT License
