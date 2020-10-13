@@ -29,7 +29,7 @@ GEM
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
     rake (13.0.1)
-    regexp_parser (1.8.1)
+    regexp_parser (1.8.2)
     rspec (3.9.0)
       rspec-core (~> 3.9.0)
       rspec-expectations (~> 3.9.0)
@@ -75,4 +75,4 @@ RUBY VERSION
    ruby 2.7.2p137
 
 BUNDLED WITH
-   1.17.3
+   2.1.4
